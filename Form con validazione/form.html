@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Form </title>
+
+</head>
+
+<body>
+
+    <form action="#">
+
+        <label for="email"> Email </label>
+        <input type="email" name="email" id="email" required> <br> <br> <!-- Email -->
+
+        <label for="password"> Password </label>
+        <input type="password" name="password" id="password" required> <br> <br> <!--Password-->
+
+        <label for="nome"> Nome </label>
+        <input type="text" name="nome" id="nome" required> <!--Nome-->
+
+        <label for="cognome"> Cognome </label>
+        <input type="text" name="cognome" id="cognome" required> <br> <br> <!--Cognome-->
+
+        <label for="data di nascita"> Data di Nascita </label>
+        <input type="date" name="data di nascita" id="data di nascita" required> <br> <br> <!--Data di Nascita-->
+
+        <label for="numero"> Numero di Telefono </label>
+        <input type="tel" name="telefono" id="telefono" maxlength="10" pattern="[0-9]{1,10}" required > <br> <br> <!--Telefono-->
+
+        <label for="abbonamento"> Abbonamento </label> <!--Abbonamento-->
+        <select name="abbonamento" id="abbonamento" required>
+
+            <optgroup>
+
+                <option value="seleziona" selected disabled> Seleziona il tuo piano </option>
+
+                <option value="free"> Piano Free </option>
+                <option value="bronze"> Bronze 4,99$ </option>
+                <option value="silver"> Silver 9,99$ </option>
+                <option value="gold"> Gold 14,99$ </option>
+
+            </optgroup>
+
+        </select> <br> <br>
+
+        <label for="pro"> Aggiungi i vantaggi di Pro </label> 
+        <input type="checkbox" name="pro" id="pro"> <br> <br> <!--Pro-->
+
+        <label for="numerodicarta"> Numero di Carta </label>
+        <input type="tel" name="numerodicarta" id="numerodicarta" maxlength="16" pattern="[0-9]{1,16}" required> <br> <br> Numero di Carta
+
+        <label for="cvc"> CVC </label>
+        <input type="tel" name="cvc" id="cvc" maxlength="3" pattern="[0-9]{1,3}" required> <br> <br> <!--CVV-->
+
+        <label for="scadenza"> Scadenza </label>
+        <input type="month" name="scadenza" id="scadenza" required> <br> <br> <!--Scadenza-->
+
+        <label for="indirizzo"> Indirizzo di Fatturazione </label>
+        <input type="text" name="indirizzo" id="indirizzo" required> <br> <br> <!--Indirizzo-->
+
+        <input type="submit" value="Sottoscrivi">
+
+    </form>
+    
+</body>
+</html>
